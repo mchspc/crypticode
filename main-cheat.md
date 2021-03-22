@@ -1,4 +1,5 @@
 # Crypticode Cheatsheet for main.py
+You can't look at the internet during Crypticode, but you can ask your partner and use this cheat-sheet.
 
 ## Statements
 These statements allow your program to skip sections of code.  
@@ -40,10 +41,22 @@ for i in range(6):
 ```
 
 ## Functions
+Functions complete a specific action when called, which changes depending on the arguments passed in parentheses.
+
+### Definition
+`def func_name(args):`  
+You'll define several of your own functions.  
+Useful for keeping your code clean.  
+```
+def example_add(arg1, arg2):
+	print("I'll go ahead and add those together")
+	value = int(arg1) + int(arg2)
+	print(value)
+	return value
+```
 
 ### Lowercase
-`string = string.lower()`
-
+`string = string.lower()`  
 Returns input string in lowercase.  
 Useful for accepting case-insensitive user input.  
 ```
@@ -84,4 +97,33 @@ user_choice = input("All done? (y/n)\n")
 if user_choice.lower() == "y":
 	print("Goodbye!")
 	exit()
+```
+
+## Operators
+Operators modify values using math or logic gates.
+
+### Logical Operators
+`and`  
+`or`  
+`not`  
+And returns True if both statements are True.
+Or returns True if any statement is True.  
+Not returns the opposite of what it's given.   
+```
+if this == 1 or that == 1:
+	if not(this == 2 or that == 2):
+		print("Passed both if statements")
+```
+
+### Division & Multiplication
+`/`  
+`*`  
+`%`  
+Division (/) and multiplication (*) speak for themselves.  
+Modulo (%) returns the remainder of a division operation.  
+Modulo is especially useful for determining whether a number is even.  
+```
+print(2.5 * 2) -> 5
+print(5 / 2) -> 2.5
+print(5 % 2) -> 1
 ```

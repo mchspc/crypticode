@@ -10,7 +10,7 @@ Working on the frontend means you write a simple script to interact with the use
 Download [this file](main-start.py) and use [this cheat-sheet](main-cheat.md) to help you out.
 
 Working on the backend means you write a simple script for reading and saving data to a file.  
-Download [this file](data-start.py) and use [this cheat sheet](data-cheat.md) to help you out.
+Download [this file](data-start.py) and use [this cheat-sheet](data-cheat.md) to help you out.
 
 ## Contact
 Anish  
