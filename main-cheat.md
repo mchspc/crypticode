@@ -5,6 +5,41 @@ You can't look at the internet during Crypticode, but you can ask your partner a
 These parts are especially important for writing main.py!  
 They're at the very top for you to quickly access them.  
 
+### User Interface
+`print(data)`  
+`string = input(string)`  
+The print() function sends data to standard output and returns nothing.  
+The input() function sends a prompt to standard output and returns the user's standard input.
+```
+print("Possible options:\n" + my_list)
+user_choice = input("Your selection: ")
+```
+
+### Acessing data.py
+`import data.py`  
+`data.function()`  
+Your partner is writing function definitions in data.py.  
+Import data.py to acess your partner's work.  
+Specify when a function comes from there.  
+```
+import data.py
+# This allows you to access you partner's work
+
+recfile = data.startup()
+contents = data.read_file(recfile)
+```
+
+### Exit Program
+`exit()`  
+Immediately terminates the program.  
+Useful for closing the program cleanly when user is done using it.
+```
+user_choice = input("All done? (y/n)\n")
+if user_choice.lower() == "y":
+	print("Goodbye!")
+	exit()
+```
+
 ## Functions
 Functions complete a specific action when called, which changes depending on the arguments passed in parentheses.
 
@@ -41,27 +76,6 @@ Useful for converting user input to a number, for instance.
 ```
 user_choice = int(input("Select a number from the given options.\n"))
 print(options[user_choice])
-```
-
-### User Interface
-`print(data)`  
-`string = input(string)`  
-The print() function sends data to standard output and returns nothing.  
-The input() function sends a prompt to standard output and returns the user's standard input.
-```
-print("Possible options:\n" + my_list)
-user_choice = input("Your selection: ")
-```
-
-### Exit Program
-`exit()`  
-Immediately terminates the program.  
-Useful for closing the program cleanly when user is done using it.
-```
-user_choice = input("All done? (y/n)\n")
-if user_choice.lower() == "y":
-	print("Goodbye!")
-	exit()
 ```
 
 ## Statements
