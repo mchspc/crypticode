@@ -6,11 +6,11 @@ MCHSPC event where competitors try to create a program without seeing their part
 ## Get Started
 Get in touch with a partner and decide who will do what.
 
-Working on the frontend means you write a simple script to interact with the user.
-Download [this file](main-start.py).
+Working on the frontend means you write a simple script to interact with the user.  
+Download [this file](main-start.py) and use [this cheat-sheet](main-cheat.md) to help you out.
 
-Working on the backend means you write a simple script for reading and saving data to a file.
-Download [this file](data-start.py).
+Working on the backend means you write a simple script for reading and saving data to a file.  
+Download [this file](data-start.py) and use [this cheat sheet](data-cheat.md) to help you out.
 
 ## Contact
 Anish  
