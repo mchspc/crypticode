@@ -43,6 +43,23 @@ elif user_input == "n":
     print("No received.")
 ``` 
 
+### If Statement
+`if condition:`  
+`elif condition:`  
+`else:`  
+Checks whether a condition is true to decide which code to run.  
+It's the crux of programming and is useful in every scenario imaginable.  
+```
+user_choice = input("What would you like to do next? ")
+if user_choice == "read":
+    data.read_file(recfile)
+elif user_choice == "write":
+    # Ask user what to write
+    data.write_file(title, contents)
+else:
+    print("I didn't understand that.")
+```
+
 ### Exit Program
 `exit()`  
 Immediately terminates the program.  
