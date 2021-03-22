@@ -18,7 +18,7 @@ user_choice = input("Your selection: ")
 ### Acessing data.py
 `import data.py`  
 `data.function()`  
-Your partner is writing function definitions in data.py.  
+Your partner is writing function definitions in the data.py file.  
 Import data.py to acess your partner's work.  
 Specify when a function comes from there.  
 ```
@@ -28,6 +28,20 @@ import data.py
 recfile = data.startup()
 contents = data.read_file(recfile)
 ```
+
+### While Loop
+`while condition:`  
+This loop continues until a condition is met.  
+Use it to prevent the program from continuing until the user gives an acceptable answer.  
+```
+user_input = ""
+while user_input != "y" and user_input != "n":
+    user_input("Yes or no? (y/n)")
+if user_input == "y":
+    print("Yes received.")
+elif user_input == "n":
+    print("No received.")
+``` 
 
 ### Exit Program
 `exit()`  
@@ -131,6 +145,34 @@ Not returns the opposite of what it's given.
 if this == 1 or that == 1:
 	if not(this == 2 or that == 2):
 		print("Passed both if statements")
+```
+
+### Equality Operators
+`==`  
+`!=`  
+These can check whether two values are equal (==) or not equal (!=) to each other.  
+Useful for checking conditions in if statements & loops.
+```
+something = "this"
+if something == "this":
+    print("It's this")
+if something != "that"
+    print("It's not that")
+```
+
+### Inequality Operators
+`<`  
+`>`  
+`<=`  
+`>=`  
+Just like in math, they check whether one value is greater (>) or less than (<) another.  
+The equals signs give True even when the values are equal to each other.
+```
+user_choice = int(input("Pick a number: "))
+if user_choice > 5:
+    print("It's greater than five")
+if user_choice < 3:
+    print("It's lesser than three.")
 ```
 
 ### Basic Math
