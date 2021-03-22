@@ -1,0 +1,87 @@
+# Crypticode Cheatsheet for main.py
+
+## Statements
+These statements allow your program to skip sections of code.  
+They aren't functions, so don't add parentheses after them.
+
+### Pass
+`pass`  
+Skips an empty code block without an error.  
+Useful for leaving behind loops, functions, etc to fill in later.
+```
+while True:
+	# I'll fill this loop in later
+	pass
+```
+### Break
+`break`  
+Immediately exits a loop, even if its condition is not met.  
+It's especially useful when inside an if statement.
+```
+while True:
+	user_choice = input("Wanna exit this vicious cycle? (y/n)\n")
+	if user_choice == "y":
+		print("Let's get out of here!")
+		break
+		print("This code will not run.")
+print("We're finally out!")
+```
+
+### Continue
+`continue`   
+Skips to the next iteration of a loop.  
+In a for loop, the counter variable will increment as usual.  
+```
+# This code will just print "5"
+for i in range(6):
+	if i < 5:
+		continue
+	print(i)
+```
+
+## Functions
+
+### Lowercase
+`string = string.lower()`
+
+Returns input string in lowercase.  
+Useful for accepting case-insensitive user input.  
+```
+user_choice = input("Would you like to continue? (y/n)\n")
+if input.lower() == "y":  
+	pass  
+else:
+	exit()
+```
+
+### Datatype Casting
+`integer = int(data)`  
+`string = str(data)`  
+`list = lst(data)`  
+Functions that return the inputted argument in the requested datatype.  
+Useful for converting user input to a number, for instance.
+```
+user_choice = int(input("Select a number from the given options.\n"))
+print(options[user_choice])
+```
+
+### User Interface
+`print(data)`  
+`string = input(string)`  
+The print() function sends data to standard output and returns nothing.  
+The input() function sends a prompt to standard output and returns the user's standard input.
+```
+print("Possible options:\n" + my_list)
+user_choice = input("Your selection: ")
+```
+
+### Exit Program
+`exit()`  
+Immediately terminates the program.  
+Useful for closing the program cleanly when user is done using it.
+```
+user_choice = input("All done? (y/n)\n")
+if user_choice.lower() == "y":
+	print("Goodbye!")
+	exit()
+```
