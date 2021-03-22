@@ -1,44 +1,9 @@
 # Crypticode Cheatsheet for main.py
 You can't look at the internet during Crypticode, but you can ask your partner and use this cheat-sheet.
 
-## Statements
-These statements allow your program to skip sections of code.  
-They aren't functions, so don't add parentheses after them.
-
-### Pass
-`pass`  
-Skips an empty code block without an error.  
-Useful for leaving behind loops, functions, etc to fill in later.
-```
-while True:
-	# I'll fill this loop in later
-	pass
-```
-### Break
-`break`  
-Immediately exits a loop, even if its condition is not met.  
-It's especially useful when inside an if statement.
-```
-while True:
-	user_choice = input("Wanna exit this vicious cycle? (y/n)\n")
-	if user_choice == "y":
-		print("Let's get out of here!")
-		break
-		print("This code will not run.")
-print("We're finally out!")
-```
-
-### Continue
-`continue`   
-Skips to the next iteration of a loop.  
-In a for loop, the counter variable will increment as usual.  
-```
-# This code will just print "5"
-for i in range(6):
-	if i < 5:
-		continue
-	print(i)
-```
+## Important
+These parts are especially important for writing main.py!  
+They're at the very top for you to quickly access them.  
 
 ## Functions
 Functions complete a specific action when called, which changes depending on the arguments passed in parentheses.
@@ -99,6 +64,45 @@ if user_choice.lower() == "y":
 	exit()
 ```
 
+## Statements
+These statements allow your program to skip sections of code.  
+They aren't functions, so don't add parentheses after them.
+
+### Pass
+`pass`  
+Skips an empty code block without an error.  
+Useful for leaving behind loops, functions, etc to fill in later.
+```
+while True:
+	# I'll fill this loop in later
+	pass
+```
+### Break
+`break`  
+Immediately exits a loop, even if its condition is not met.  
+It's especially useful when inside an if statement.
+```
+while True:
+	user_choice = input("Wanna exit this vicious cycle? (y/n)\n")
+	if user_choice == "y":
+		print("Let's get out of here!")
+		break
+		print("This code will not run.")
+print("We're finally out!")
+```
+
+### Continue
+`continue`   
+Skips to the next iteration of a loop.  
+In a for loop, the counter variable will increment as usual.  
+```
+# This code will just print "5"
+for i in range(6):
+	if i < 5:
+		continue
+	print(i)
+```
+
 ## Operators
 Operators modify values using math or logic gates.
 
@@ -115,15 +119,33 @@ if this == 1 or that == 1:
 		print("Passed both if statements")
 ```
 
-### Division & Multiplication
+### Basic Math
 `/`  
 `*`  
-`%`  
-Division (/) and multiplication (*) speak for themselves.  
-Modulo (%) returns the remainder of a division operation.  
-Modulo is especially useful for determining whether a number is even.  
+`+`  
+`-`  
+These operators work just like math symbols.
 ```
-print(2.5 * 2) -> 5
-print(5 / 2) -> 2.5
-print(5 % 2) -> 1
+print(3 + 2) -> 5
+print(3 - 2) -> 1
+print(3 * 2) -> 6
+print(3 / 2) -> 1.5
+```
+
+### Modulo
+`%`  
+Gives the remainder of a division operation.  
+Useful for determining whether a number is even.  
+```
+if (number % 2 == 0):
+    print(str(number) + "is even!")
+else:
+    print(str(number) + "is odd!")
+```
+
+### Exponent
+`**`  
+Raises a number to a power.  
+```
+print(10 * 3) -> 1000
 ```
