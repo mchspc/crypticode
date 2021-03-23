@@ -1,46 +1,55 @@
 # Crypticode Cheatsheet for main.py
 You can't look at the internet during Crypticode, but you can ask your partner and use this cheat-sheet.
 
-## Important
-These parts are especially important for writing main.py!  
-They're at the very top for you to quickly access them.  
+## Mission
 
-### User Interface
-`print(data)`  
-`string = input(string)`  
-The print() function sends data to standard output and returns nothing.  
-The input() function sends a prompt to standard output and returns the user's standard input.
+### Goals
+You're in charge of reading & writing a text file with data.  
+Quickly fill in the function definitions from [data.py](data.py)!
+- Open data file at startup
+- Close data file when done
+- Read data from file
+- Turn that data into list(s)  
+- Write new data to file
+
+### Working Together
+First and foremost, **NEVER** share code with each other.  
+Don't look at your partner's code or at their starter file, as this ruins the challenge!
+
+With that being said...  
+You're working on [data.py](data.py) and your partner is writing main.py.  
+Your file is not run, but it contains function definitions accessible to main.py at runtime.  
+Without your work, the program will break!
+
+## Important
+
+### File Management
+`import os` 
+`file_var = open(filepath, perm)`  
+`file_var.read()`  
+`file_var.write(string)`  
+`file_var.close()`  
+You must import the os module to use these functions, which let you save and read text documents.  
+The open() function saves your file as a variable.  
+The read() and write() function let you access and save data respectively.  
+The close() function should be used before the program closes.
 ```
 print("Possible options:\n" + my_list)
 user_choice = input("Your selection: ")
 ```
 
-### Acessing data.py
-`import data.py`  
-`data.function()`  
-Your partner is writing function definitions in the data.py file.  
-Import data.py to acess your partner's work.  
-Specify when a function comes from there.  
+### For Loop
+`for i in iterable:`  
+This loop executes the given code once per item in an iterable such as a range, list, or string.  
+Use it to complete similar actions in rapid succession.
 ```
-import data.py
-# This allows you to access you partner's work
-
-recfile = data.startup()
-contents = data.read_file(recfile)
-```
-
-### While Loop
-`while condition:`  
-This loop continues until a condition is met.  
-Use it to prevent the program from continuing until the user gives an acceptable answer.  
-```
-user_input = ""
-while user_input != "y" and user_input != "n":
-    user_input("Yes or no? (y/n)")
-if user_input == "y":
-    print("Yes received.")
-elif user_input == "n":
-    print("No received.")
+current = ""
+for char in text:
+	if char == "\n":
+		my_list.append(current)
+		curent = ""
+	else:
+		current += char
 ``` 
 
 ### If Statement
@@ -60,19 +69,7 @@ else:
     print("I didn't understand that.")
 ```
 
-### Exit Program
-`exit()`  
-Immediately terminates the program.  
-Useful for closing the program cleanly when user is done using it.
-```
-user_choice = input("All done? (y/n)\n")
-if user_choice.lower() == "y":
-	print("Goodbye!")
-	exit()
-```
-
 ## Functions
-Functions complete a specific action when called, which changes depending on the arguments passed in parentheses.
 
 ### Definition
 `def func_name(args):`  
@@ -84,6 +81,27 @@ def example_add(arg1, arg2):
 	value = int(arg1) + int(arg2)
 	print(value)
 	return value
+```
+
+### Range
+`list = range(start, stop, step)`  
+Returns a list of numbers beginning at start, incrementing by step, and ending at (but not including) stop.  
+The start and stop arguments are optional, defaulting to 0 and 1 respectively.  
+```
+user_choice = int(input("Select option 0, 1, or 2 please: "))
+if user_choice in range(3):
+	break
+else:
+	print("You did not select a valid option.\n")
+```
+
+### Item Length
+`int = len(iterable)`  
+Returns the number of items in an iterable such as a range, list, or string.
+Useful when specifying the number of available options.
+```
+num_notes = len(notes)
+print("You have" + num_notes + "notes available.\n")
 ```
 
 ### Lowercase
@@ -110,8 +128,6 @@ print(options[user_choice])
 ```
 
 ## Statements
-These statements allow your program to skip sections of code.  
-They aren't functions, so don't add parentheses after them.
 
 ### Pass
 `pass`  
@@ -149,7 +165,6 @@ for i in range(6):
 ```
 
 ## Operators
-Operators modify values using math or logic gates.
 
 ### Logical Operators
 `and`  
