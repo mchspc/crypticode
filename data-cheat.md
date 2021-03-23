@@ -25,7 +25,7 @@ Without your work, the program will break!
 
 ### File Management
 `import os` 
-`file_var = open(filepath, perm)`  
+`file_var = open(filepath, permission)`  
 `file_var.read()`  
 `file_var.write(string)`  
 `file_var.close()`  
@@ -68,6 +68,9 @@ elif user_choice == "write":
 else:
     print("I didn't understand that.")
 ```
+
+### Split
+split() for file contents -> list
 
 ## Functions
 

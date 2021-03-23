@@ -32,11 +32,11 @@ print("Possible options:\n" + my_list)
 user_choice = input("Your selection: ")
 ```
 
-### Acessing data.py
+### Accessing data.py
 `import data.py`  
 `data.function()`  
 Your partner is writing function definitions in the data.py file.  
-Import data.py to acess your partner's work.  
+Import data.py to access your partner's work.  
 Specify when a function comes from there.  
 ```
 import data.py
@@ -45,6 +45,16 @@ import data.py
 recfile = data.startup()
 contents = data.read_file(recfile)
 ```
+
+### Functions from data.py
+`recfile = data.startup()`  
+`titles, contents = data.read_file(recfile)`  
+`data.write_file(recfile, new_title, new_content)`
+`data.shutdown(recfile)`
+These are functions from your partner's file.  
+Call startup() at the beginning and shutdown() at the end.  
+Use read_file() and write_file() for reading and writing respectively.  
+Pay attention to the arguments needed for each function. 
 
 ### While Loop
 `while condition:`  

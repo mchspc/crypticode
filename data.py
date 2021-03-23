@@ -15,7 +15,7 @@ Good luck!
 '''
 
 def startup():
-    # open the file
+    # open the file & return the variable
 
 def read_file(recfile):
     # read from file
