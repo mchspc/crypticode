@@ -16,5 +16,16 @@ Good luck!
 '''
 
 while (True):
+    recfile = data.startup() #assigns recfile variable to the output of startup() command, use recfile as the first argument in the other data.py functions
+    userinput = input("")
+
+
+    '''
+    Write all if statements here
+    '''
+    else:
+        '''
+        Call shutdown and exit the program
+        '''
     # Write a set of if statements to read, write, or close the program based on userChoice (be prepared to handle edge cases)
     # Tip: Call the shutdown() function from data.py before exit() when ending the program read_file()
