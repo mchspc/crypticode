@@ -1,19 +1,20 @@
-import data
-
-# To access your partner's functions, use data.<functionname>()
-# Ask your partner what their functions are called and what they do
-
 '''
-Goals of this file:     
-Interact with user
-Ask if they'd like to read or to write
-If read, display all titles and allow to select one (Access functions from data.py)
-When selected, display title and full text to user
+You are in charge of interacting with the user via the command line
+You can access your partner's functions by writing data.function()
 
-If write, receive user input for title and text and use data.py functions to write to .txt
+Refer to this cheat-sheet for help!
+https://github.com/mchspc/crypticode/blob/main/main-cheat.md
+
+Goals
+-----
+- Interact with user
+- Ask if they'd like to read or to write
+- If read, display all titles and allow to select one (Access functions from data.py)
+- When selected, display title and full text to user
 
 Good luck!
 '''
+import data
 
 while (True):
     recfile = data.startup() #assigns recfile variable to the output of startup() command, use recfile as the first argument in the other data.py functions

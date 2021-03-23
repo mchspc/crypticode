@@ -7,11 +7,11 @@ https://github.com/mchspc/crypticode/blob/main/data-cheat.md
 
 Goals
 -----
-Open data file at startup
-Close data file when done
-Read data from file
-Turn that data (titles & notes) into lists/dict
-Write new data to the file
+- Open data file at startup
+- Close data file when done
+- Read data from file
+- Turn that data (titles & notes) into lists/dict
+- Write new data to the file
 
 Good luck!
 '''
