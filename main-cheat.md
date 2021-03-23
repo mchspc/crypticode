@@ -1,9 +1,26 @@
 # Crypticode Cheatsheet for main.py
 You can't look at the internet during Crypticode, but you can ask your partner and use this cheat-sheet.
 
+## Mission
+
+### Goals
+You're in charge of interacting with the user via the command line.  
+Quickly fill in the code for [main.py](main.py)!
+- Interact with user  
+- Ask whether to read or write  
+- Read: list titles & display contents upon selection
+- Write: send user's title & text to be written
+
+### Working Together
+First and foremost, **NEVER** share code with each other.  
+Don't look at your partner's code or at their starter file, as this ruins the challenge!
+
+With that being said...  
+You're working on [main.py](main.py) and your partner is writing data.py.  
+Your file is run and connects with data.py in order to access its function definitions.  
+Without your work, the program will break!
+
 ## Important
-These parts are especially important for writing main.py!  
-They're at the very top for you to quickly access them.  
 
 ### User Interface
 `print(data)`  
@@ -72,7 +89,6 @@ if user_choice.lower() == "y":
 ```
 
 ## Functions
-Functions complete a specific action when called, which changes depending on the arguments passed in parentheses.
 
 ### Definition
 `def func_name(args):`  
@@ -110,8 +126,6 @@ print(options[user_choice])
 ```
 
 ## Statements
-These statements allow your program to skip sections of code.  
-They aren't functions, so don't add parentheses after them.
 
 ### Pass
 `pass`  
@@ -122,6 +136,7 @@ while True:
 	# I'll fill this loop in later
 	pass
 ```
+
 ### Break
 `break`  
 Immediately exits a loop, even if its condition is not met.  
@@ -149,7 +164,6 @@ for i in range(6):
 ```
 
 ## Operators
-Operators modify values using math or logic gates.
 
 ### Logical Operators
 `and`  
