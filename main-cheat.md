@@ -33,7 +33,7 @@ user_choice = input("Your selection: ")
 ```
 
 ### Accessing data.py
-`import data.py`  
+`import data`
 `data.function()`  
 Your partner is writing function definitions in the data.py file.  
 Import data.py to access your partner's work.  

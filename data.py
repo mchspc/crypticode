@@ -1,8 +1,10 @@
-# You are in charge of reading & writing data from a file
-# Functions you define here will be accessible from your partner's script
-# Refer to the cheatsheet PDF to learn about useful functions
-
 '''
+You are in charge of reading & writing data from a text file
+Functions you define here will be accessible from your partner's script
+
+Refer to this cheat-sheet for help!
+https://github.com/mchspc/crypticode/blob/main/data-cheat.md
+
 Goals
 -----
 Open data file at startup
