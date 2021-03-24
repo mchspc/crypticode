@@ -9,7 +9,7 @@ Goals
 -----
 - Open data file at startup and close to ensure file exists/is created
 - Read data from file
-- Turn that data (titles & notes) into lists/dict
+- Turn that data (titles & notes) into lists
 - Write new data to the file
 - Close data file at the end of all functions
 

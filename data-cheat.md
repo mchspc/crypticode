@@ -5,12 +5,12 @@ You can't look at the internet during Crypticode, but you can ask your partner a
 
 ### Goals
 You're in charge of reading & writing a text file with data.  
-Quickly fill in the function definitions from [data.py](data.py)!
-- Open data file at startup
-- Close data file when done
-- Read data from file
-- Turn that data into list(s)  
-- Write new data to file
+Quickly fill in the function definitions from [data.py](data.py)!  
+- Open data file at startup and close to ensure file exists/is created  
+- Read data from file  
+- Turn that data (titles & notes) into lists  
+- Write new data to the file  
+- Close data file at the end of all functions  
 
 ### Working Together
 First and foremost, **NEVER** share code with each other.  
