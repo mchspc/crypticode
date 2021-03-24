@@ -29,10 +29,18 @@ Without your work, the program will break!
 `string = file_var.read()`  
 `file_var.write(string)`  
 `file_var.close()`  
+<<<<<<< HEAD
 You must import the os module to use these functions for text file manipulation.  
 The open() function saves the file as a variable. See the section below.  
 The read() and write() function let you access and save data respectively.  
 The close() function should be used before the program closes.
+=======
+You must import the os module to use these functions, which let you save and read text documents.  
+The open() function saves your file as a variable.  
+The read() and write() function let you access and save data respectively.  
+The write() function overwrites the current text, so be sure to store the current data, edit it with new information, and then write it back in with the same formatting.  
+The close() function should be used before the program closes.  
+>>>>>>> 31ed0d7833d8e2927b43f5b022372d11b34db679
 ```
 recfile = open("recfile.txt", "a")
 recfile.write(new_content)
