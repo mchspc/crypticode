@@ -26,7 +26,7 @@ Without your work, the program will break!
 ### File Management
 `import os` 
 `file_var = open(filepath, permission)`  
-`file_var.read()`  
+`string = file_var.read()`  
 `file_var.write(string)`  
 `file_var.close()`  
 You must import the os module to use these functions, which let you save and read text documents.  
@@ -70,7 +70,13 @@ else:
 ```
 
 ### Split
-split() for file contents -> list
+`list = string.split(divider)` 
+Turns a string into an array using a divider character.  
+Useful for converting file contents into a list.  
+```
+recfile_contents = recfile.read()  
+lines = recfile_contents.split("\n")
+```
 
 ## Functions
 
