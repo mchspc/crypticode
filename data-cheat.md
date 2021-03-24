@@ -24,7 +24,7 @@ Without your work, the program will break!
 ## Important
 
 ### File Management
-`import os` 
+`import os`  
 `file_var = open(filename, permission)`  
 `string = file_var.read()`  
 `file_var.write(string)`  
