@@ -25,19 +25,26 @@ Without your work, the program will break!
 
 ### File Management
 `import os` 
-`file_var = open(filepath, permission)`  
+`file_var = open(filename, permission)`  
 `string = file_var.read()`  
 `file_var.write(string)`  
 `file_var.close()`  
-You must import the os module to use these functions, which let you save and read text documents.  
-The open() function saves your file as a variable.  
-The read() and write() function let you access and save data respectively. 
-The write() function overwrites the current text, so be sure to store the current data, edit it with new information, and then write it back in with the same formatting 
+You must import the os module to use these functions for text file manipulation.  
+The open() function saves the file as a variable. See the section below.  
+The read() and write() function let you access and save data respectively.  
 The close() function should be used before the program closes.
 ```
-print("Possible options:\n" + my_list)
-user_choice = input("Your selection: ")
+recfile = open("recfile.txt", "a")
+recfile.write(new_content)
 ```
+
+### File Permissions
+`file_var = open(filename, "a")`  
+`file_var = open(filepath, "w")` 
+The open() function determines read/write permissions for the file being opened.  
+Pass "a" to append new changes at the end of the file with write() later.  
+Pass "r" to read the contents of the file as it is with read() later.  
+Unlike "r", the "a" permission will create a new file if one is not found.  
 
 ### For Loop
 `for i in iterable:`  
@@ -71,7 +78,7 @@ else:
 ```
 
 ### Split
-`list = string.split(divider)` 
+`list = string.split(divider)`  
 Turns a string into an array using a divider character.  
 Useful for converting file contents into a list.  
 ```
