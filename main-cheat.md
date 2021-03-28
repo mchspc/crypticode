@@ -42,15 +42,15 @@ Specify when a function comes from there.
 import data.py
 # This allows you to access you partner's work
 
-recfile = data.startup()
-contents = data.read_file(recfile)
+data.startup()
+titles, contents = data.read_file()
 ```
 
 ### Functions from data.py
-`recfile = data.startup()`  
-`titles, contents = data.read_file(recfile)`  
-`data.write_file(recfile, new_title, new_content)`
-`data.shutdown(recfile)`
+`data.startup()`  
+`titles, contents = data.read_file()`
+`data.write_file(new_title, new_content)`
+`data.shutdown()`
 These are functions from your partner's file.  
 Call startup() at the beginning and shutdown() at the end.  
 Use read_file() and write_file() for reading and writing respectively.  
@@ -79,7 +79,7 @@ It's the crux of programming and is useful in every scenario imaginable.
 ```
 user_choice = input("What would you like to do next? ")
 if user_choice == "read":
-    data.read_file(recfile)
+    data.read_file()
 elif user_choice == "write":
     # Ask user what to write
     data.write_file(title, contents)

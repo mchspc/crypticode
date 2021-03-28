@@ -69,7 +69,7 @@ It's the crux of programming and is useful in every scenario imaginable.
 ```
 user_choice = input("What would you like to do next? ")
 if user_choice == "read":
-    data.read_file(recfile)
+    data.read_file()
 elif user_choice == "write":
     # Ask user what to write
     data.write_file(title, contents)
