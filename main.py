@@ -22,5 +22,6 @@ while (True):
     # prompt user to read, write, or quit, and take action
     # write all if statements here
 
+    
     else:
         # call data.shutdown() and exit program
