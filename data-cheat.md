@@ -1,4 +1,4 @@
-# Crypticode Cheatsheet for main.py
+# Crypticode Cheatsheet for data.py
 You can't look at the internet during Crypticode, but you can ask your partner and use this cheat-sheet.
 
 ## Mission
@@ -40,11 +40,11 @@ recfile.write(new_content)
 
 ### File Permissions
 `file_var = open(filename, "a")`  
-`file_var = open(filepath, "w")`  
+`file_var = open(filepath, "r")`  
 The open() function determines read/write permissions for the file being opened.  
 Pass "a" to append new changes at the end of the file with write() later.  
 Pass "r" to read the contents of the file as it is with read() later.  
-Unlike "r", the "a" permission will create a new file if one is not found.  
+The "a" permission will create a new file if one is not found.  
 
 ### For Loop
 `for i in iterable:`  

@@ -49,8 +49,8 @@ titles, contents = data.read_file()
 ### Functions from data.py
 `data.startup()`  
 `titles, contents = data.read_file()`
-`data.write_file(new_title, new_content)`
-`data.shutdown()`
+`data.write_file(new_title, new_content)`  
+`data.shutdown()`  
 These are functions from your partner's file.  
 Call startup() at the beginning and shutdown() at the end.  
 Use read_file() and write_file() for reading and writing respectively.  
