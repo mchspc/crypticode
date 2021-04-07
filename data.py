@@ -7,9 +7,9 @@ https://github.com/mchspc/crypticode/blob/main/data-cheat.md
 
 Goals
 -----
-- Open data file at startup and close to ensure file exists/is created
-- Read data from file
-- Turn that data (titles & notes) into lists
+- Read data from single file
+- Separate that data (titles & notes) into lists (separated by new line operator)
+- Return titles and content as separate lists
 - Write new data to the file
 - Close data file at the end of all functions
 
@@ -17,14 +17,15 @@ Good luck!
 '''
 
 def startup():
-    # open the file so that if it does not already exist, it will be created (use appropriate file permissions from cheat sheet to help)
-    # close file right after
-
+    recfile = open("recfile.txt", "a")
+    recfile.close()
+    # Ignore - Required for testing purposes
 def read_file():
     # open file with appropriate permissions
     # read from file
     # separate the titles & content so it can be returned to main.py
     # close file after
+    return(titles, content)
 
 def write_file(new_title, new_content):
     # open file with appropriate permissions
