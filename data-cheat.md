@@ -6,7 +6,6 @@ You can't look at the internet during Crypticode, but you can ask your partner a
 ### Goals
 You're in charge of reading & writing a text file with data.  
 Quickly fill in the function definitions from [data.py](data.py)!  
-- Open data file at startup and close to ensure file exists/is created  
 - Read data from file  
 - Turn that data (titles & notes) into lists  
 - Write new data to the file  
@@ -24,12 +23,10 @@ Without your work, the program will break!
 ## Important
 
 ### File Management
-`import os`  
 `file_var = open(filename, permission)`  
 `string = file_var.read()`  
 `file_var.write(string)`  
 `file_var.close()`  
-You must import the os module to use these functions for text file manipulation.  
 The open() function saves the file as a variable. See the section below.  
 The read() and write() function let you access and save data respectively.  
 The close() function should be used before the program closes.
