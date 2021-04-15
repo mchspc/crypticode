@@ -46,7 +46,7 @@ titles, contents = data.read_file()
 ```
 
 ### Functions from data.py
-`titles, contents = data.read_file()`
+`titles, contents = data.read_file()`  
 `data.write_file(new_title, new_content)`  
 These are functions from your partner's file.  
 Use read_file() and write_file() for reading and writing respectively.  

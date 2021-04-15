@@ -16,14 +16,14 @@ Goals
 
 Good luck!
 '''
+
 import data
 
-data.startup() #Ignore - For testing purposes
+data.startup() #Ignore this, it's for testing
 
 while (True):
-    # prompt user to read, write, or quit, and take action
-    # write all if statements here
-
+    # prompt user to read, write, or quit
+    # write if statements here
     
     else:
-        # call data.shutdown() and exit program
+        # exit program

@@ -17,9 +17,10 @@ Good luck!
 '''
 
 def startup():
+    # Ignore this function, it's for testing purposes
     recfile = open("recfile.txt", "a")
     recfile.close()
-    # Ignore - Required for testing purposes
+
 def read_file():
     # open file with appropriate permissions
     # read from file
