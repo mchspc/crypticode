@@ -20,6 +20,11 @@ Note that not all of the concepts on this cheat sheet are needed for your progra
 
 ## Important
 
+### Random Choice
+`choice(list_name)`
+The `choice()` function from the `random` module has been imported into back.py for you.
+This function returns a random item from the list provided to it as an argument.
+
 ### For Loop
 `for i in iterable:`  
 This loop executes the given code once per item in an iterable such as a range, list, or string.  
